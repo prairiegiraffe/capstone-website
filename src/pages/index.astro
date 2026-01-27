@@ -1,0 +1,104 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Home">
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-br from-slate-900 via-slate-800 to-primary-900 text-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+        Wyoming-Anchored<br />Energy Development
+      </h1>
+      <p class="mt-6 text-lg md:text-xl text-slate-300 max-w-2xl">
+        CapStone Sustainable Carbon Solutions advances coal-to-products manufacturing and carbon-managed industrial infrastructure.
+      </p>
+      <div class="mt-10">
+        <a
+          href="/project"
+          class="inline-flex items-center px-6 py-3 bg-primary-600 hover:bg-primary-700 text-white font-medium rounded-lg transition-colors"
+        >
+          Learn About the Project
+          <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Intro Section -->
+  <section class="py-20 bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="prose prose-lg max-w-none">
+        <p class="text-xl text-slate-700 leading-relaxed">
+          CapStone is a project development and execution platform focused on transforming Wyoming's energy-dense resources into essential industrial products — starting with blue ammonia production and integrated carbon management.
+        </p>
+        <p class="mt-6 text-lg text-slate-600 leading-relaxed">
+          We bridge early-stage concept development through Pre-FEED, capital alignment, and execution readiness for large-scale energy and industrial facilities.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Value Props -->
+  <section class="py-20 bg-slate-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Coal-to-Products -->
+        <div class="bg-white p-8 rounded-xl shadow-sm border border-slate-200">
+          <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-6">
+            <svg class="w-6 h-6 text-primary-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-slate-900 mb-3">Coal-to-Products</h3>
+          <p class="text-slate-600">
+            Converting regional coal resources into high-value industrial outputs including ammonia and dispatchable power.
+          </p>
+        </div>
+
+        <!-- Carbon Management -->
+        <div class="bg-white p-8 rounded-xl shadow-sm border border-slate-200">
+          <div class="w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center mb-6">
+            <svg class="w-6 h-6 text-accent-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-slate-900 mb-3">Carbon Management</h3>
+          <p class="text-slate-600">
+            Integrating carbon capture and geological storage into project design from day one.
+          </p>
+        </div>
+
+        <!-- Wyoming First -->
+        <div class="bg-white p-8 rounded-xl shadow-sm border border-slate-200">
+          <div class="w-12 h-12 bg-slate-100 rounded-lg flex items-center justify-center mb-6">
+            <svg class="w-6 h-6 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-slate-900 mb-3">Wyoming First</h3>
+          <p class="text-slate-600">
+            Anchored in Wyoming's regulatory primacy for CO&#8322; storage and existing industrial infrastructure.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-20 bg-primary-900 text-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-2xl md:text-3xl font-semibold">Interested in learning more?</h2>
+      <div class="mt-8">
+        <a
+          href="/contact"
+          class="inline-flex items-center px-8 py-3 bg-white text-primary-900 font-medium rounded-lg hover:bg-slate-100 transition-colors"
+        >
+          Contact Us
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>
