@@ -3,98 +3,140 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Home">
-  <!-- Hero Section -->
-  <section class="bg-gradient-to-br from-slate-900 via-slate-800 to-primary-900 text-white">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
-      <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-        Wyoming-Anchored<br />Energy Development
-      </h1>
-      <p class="mt-6 text-lg md:text-xl text-slate-300 max-w-2xl">
-        CapStone Sustainable Carbon Solutions advances coal-to-products manufacturing and carbon-managed industrial infrastructure.
-      </p>
-      <div class="mt-10">
-        <a
-          href="/project"
-          class="inline-flex items-center px-6 py-3 bg-primary-600 hover:bg-primary-700 text-white font-medium rounded-lg transition-colors"
-        >
-          Learn About the Project
-          <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-          </svg>
-        </a>
+  <!-- Hero Section - "we've met with the Secretary of Energy" vibes -->
+  <section class="relative bg-navy-950 text-white overflow-hidden">
+    <!-- Subtle pattern overlay -->
+    <div class="absolute inset-0 opacity-5">
+      <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,%3Csvg width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"none\" fill-rule=\"evenodd\"%3E%3Cg fill=\"%23ffffff\" fill-opacity=\"1\"%3E%3Cpath d=\"M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+    </div>
+
+    <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-28 md:py-36">
+      <div class="max-w-3xl">
+        <!-- Gold accent line -->
+        <div class="w-20 h-1 bg-gold-500 mb-8"></div>
+
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight">
+          Wyoming-Anchored<br />
+          <span class="text-gold-500">Energy Development</span>
+        </h1>
+
+        <p class="mt-8 text-lg md:text-xl text-slate-300 leading-relaxed max-w-2xl">
+          CapStone Sustainable Carbon Solutions advances coal-to-products manufacturing and carbon-managed industrial infrastructure.
+        </p>
+
+        <div class="mt-10 flex flex-col sm:flex-row gap-4">
+          <a
+            href="/project"
+            class="inline-flex items-center justify-center px-8 py-4 bg-gold-600 hover:bg-gold-500 text-navy-950 font-semibold tracking-wide uppercase text-sm transition-colors"
+          >
+            Learn About the Project
+            <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </a>
+          <a
+            href="/contact"
+            class="inline-flex items-center justify-center px-8 py-4 border border-slate-500 hover:border-gold-500 hover:text-gold-500 text-slate-300 font-medium tracking-wide uppercase text-sm transition-colors"
+          >
+            Contact Us
+          </a>
+        </div>
       </div>
     </div>
+
+    <!-- Bottom gold accent -->
+    <div class="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-gold-600 via-gold-500 to-gold-600"></div>
   </section>
 
-  <!-- Intro Section -->
-  <section class="py-20 bg-white">
+  <!-- Intro Section - "we write white papers" gravitas -->
+  <section class="py-24 bg-white">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="prose prose-lg max-w-none">
-        <p class="text-xl text-slate-700 leading-relaxed">
-          CapStone is a project development and execution platform focused on transforming Wyoming's energy-dense resources into essential industrial products — starting with blue ammonia production and integrated carbon management.
-        </p>
-        <p class="mt-6 text-lg text-slate-600 leading-relaxed">
-          We bridge early-stage concept development through Pre-FEED, capital alignment, and execution readiness for large-scale energy and industrial facilities.
-        </p>
+      <div class="text-center mb-12">
+        <div class="w-16 h-1 bg-gold-500 mx-auto mb-8"></div>
+        <h2 class="text-sm font-semibold tracking-widest uppercase text-gold-700 mb-4">Our Mission</h2>
       </div>
+
+      <p class="text-xl md:text-2xl text-slate-700 leading-relaxed text-center font-serif">
+        CapStone is a project development and execution platform focused on transforming Wyoming's energy-dense resources into essential industrial products — starting with blue ammonia production and integrated carbon management.
+      </p>
+
+      <p class="mt-8 text-lg text-slate-600 leading-relaxed text-center">
+        We bridge early-stage concept development through Pre-FEED, capital alignment, and execution readiness for large-scale energy and industrial facilities.
+      </p>
     </div>
   </section>
 
-  <!-- Value Props -->
-  <section class="py-20 bg-slate-50">
+  <!-- Value Props - "these are our strategic pillars" -->
+  <section class="py-24 bg-slate-100">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-sm font-semibold tracking-widest uppercase text-gold-700 mb-4">Strategic Focus</h2>
+        <h3 class="text-3xl font-bold text-navy-900">Core Competencies</h3>
+      </div>
+
       <div class="grid md:grid-cols-3 gap-8">
         <!-- Coal-to-Products -->
-        <div class="bg-white p-8 rounded-xl shadow-sm border border-slate-200">
-          <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-6">
-            <svg class="w-6 h-6 text-primary-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
-            </svg>
+        <div class="bg-white border-t-4 border-gold-500 shadow-lg">
+          <div class="p-8">
+            <div class="w-14 h-14 bg-navy-900 flex items-center justify-center mb-6">
+              <svg class="w-7 h-7 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-navy-900 mb-4">Coal-to-Products</h3>
+            <p class="text-slate-600 leading-relaxed">
+              Converting regional coal resources into high-value industrial outputs including ammonia and dispatchable power.
+            </p>
           </div>
-          <h3 class="text-xl font-semibold text-slate-900 mb-3">Coal-to-Products</h3>
-          <p class="text-slate-600">
-            Converting regional coal resources into high-value industrial outputs including ammonia and dispatchable power.
-          </p>
         </div>
 
         <!-- Carbon Management -->
-        <div class="bg-white p-8 rounded-xl shadow-sm border border-slate-200">
-          <div class="w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center mb-6">
-            <svg class="w-6 h-6 text-accent-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
+        <div class="bg-white border-t-4 border-gold-500 shadow-lg">
+          <div class="p-8">
+            <div class="w-14 h-14 bg-navy-900 flex items-center justify-center mb-6">
+              <svg class="w-7 h-7 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-navy-900 mb-4">Carbon Management</h3>
+            <p class="text-slate-600 leading-relaxed">
+              Integrating carbon capture and geological storage into project design from day one.
+            </p>
           </div>
-          <h3 class="text-xl font-semibold text-slate-900 mb-3">Carbon Management</h3>
-          <p class="text-slate-600">
-            Integrating carbon capture and geological storage into project design from day one.
-          </p>
         </div>
 
         <!-- Wyoming First -->
-        <div class="bg-white p-8 rounded-xl shadow-sm border border-slate-200">
-          <div class="w-12 h-12 bg-slate-100 rounded-lg flex items-center justify-center mb-6">
-            <svg class="w-6 h-6 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-            </svg>
+        <div class="bg-white border-t-4 border-gold-500 shadow-lg">
+          <div class="p-8">
+            <div class="w-14 h-14 bg-navy-900 flex items-center justify-center mb-6">
+              <svg class="w-7 h-7 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 21V3h18v18H3zM12 8v8M8 12h8" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-navy-900 mb-4">Wyoming First</h3>
+            <p class="text-slate-600 leading-relaxed">
+              Anchored in Wyoming's regulatory primacy for CO&#8322; storage and existing industrial infrastructure.
+            </p>
           </div>
-          <h3 class="text-xl font-semibold text-slate-900 mb-3">Wyoming First</h3>
-          <p class="text-slate-600">
-            Anchored in Wyoming's regulatory primacy for CO&#8322; storage and existing industrial infrastructure.
-          </p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CTA Section -->
-  <section class="py-20 bg-primary-900 text-white">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <h2 class="text-2xl md:text-3xl font-semibold">Interested in learning more?</h2>
-      <div class="mt-8">
+  <!-- CTA Section - "let's schedule a meeting" energy -->
+  <section class="py-20 bg-navy-950 text-white relative">
+    <div class="absolute inset-0 opacity-10">
+      <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,%3Csvg width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"none\" fill-rule=\"evenodd\"%3E%3Cg fill=\"%23ffffff\" fill-opacity=\"1\"%3E%3Cpath d=\"M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+    </div>
+
+    <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div class="w-16 h-1 bg-gold-500 mx-auto mb-8"></div>
+      <h2 class="text-2xl md:text-3xl font-bold">Interested in learning more?</h2>
+      <p class="mt-4 text-slate-400">We welcome inquiries from partners, investors, and industry stakeholders.</p>
+      <div class="mt-10">
         <a
           href="/contact"
-          class="inline-flex items-center px-8 py-3 bg-white text-primary-900 font-medium rounded-lg hover:bg-slate-100 transition-colors"
+          class="inline-flex items-center px-10 py-4 bg-gold-600 hover:bg-gold-500 text-navy-950 font-semibold tracking-wide uppercase text-sm transition-colors"
         >
           Contact Us
         </a>

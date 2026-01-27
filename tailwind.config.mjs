@@ -4,20 +4,35 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Professional blues and grays with green accent
-        primary: {
-          50: '#eff6ff',
-          100: '#dbeafe',
-          200: '#bfdbfe',
-          300: '#93c5fd',
-          400: '#60a5fa',
-          500: '#3b82f6',
-          600: '#2563eb',
-          700: '#1d4ed8',
-          800: '#1e40af',
-          900: '#1e3a8a',
-          950: '#172554',
+        // Deep patriotic navy - "I've testified before Congress" energy
+        navy: {
+          50: '#f0f4f8',
+          100: '#d9e2ec',
+          200: '#bcccdc',
+          300: '#9fb3c8',
+          400: '#829ab1',
+          500: '#627d98',
+          600: '#486581',
+          700: '#334e68',
+          800: '#243b53',
+          900: '#102a43',
+          950: '#0a1929',
         },
+        // Presidential gold - "my signature is on important documents"
+        gold: {
+          50: '#fffdf7',
+          100: '#fef9e7',
+          200: '#fdf0c4',
+          300: '#fbe59e',
+          400: '#f7d070',
+          500: '#e9b949',
+          600: '#c99a2e',
+          700: '#a67c23',
+          800: '#84641e',
+          900: '#5c4813',
+          950: '#3d2f0a',
+        },
+        // Slate grays - boardroom gravitas
         slate: {
           50: '#f8fafc',
           100: '#f1f5f9',
@@ -31,20 +46,17 @@ export default {
           900: '#0f172a',
           950: '#020617',
         },
-        accent: {
-          50: '#f0fdf4',
-          100: '#dcfce7',
-          200: '#bbf7d0',
-          300: '#86efac',
-          400: '#4ade80',
-          500: '#22c55e',
-          600: '#16a34a',
-          700: '#15803d',
-          800: '#166534',
-          900: '#14532d',
+        // Deep red accent - American flag, power ties
+        crimson: {
+          500: '#b91c1c',
+          600: '#991b1b',
+          700: '#7f1d1d',
+          800: '#651a1a',
         },
       },
       fontFamily: {
+        // Serif for that "established institution" feel
+        serif: ['Georgia', 'Cambria', 'Times New Roman', 'serif'],
         sans: ['Inter', 'system-ui', 'sans-serif'],
       },
     },

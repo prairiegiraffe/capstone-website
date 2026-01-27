@@ -4,48 +4,69 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout title="Contact" description="Get in touch with CapStone Sustainable Carbon Solutions.">
   <!-- Hero Section -->
-  <section class="bg-gradient-to-br from-slate-900 via-slate-800 to-primary-900 text-white">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28">
-      <h1 class="text-4xl md:text-5xl font-bold leading-tight">
-        Get in Touch
-      </h1>
-      <p class="mt-6 text-lg md:text-xl text-slate-300 max-w-2xl">
-        We welcome inquiries from potential partners, investors, and collaborators.
-      </p>
+  <section class="relative bg-navy-950 text-white">
+    <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
+      <div class="max-w-3xl">
+        <div class="w-20 h-1 bg-gold-500 mb-8"></div>
+        <h1 class="text-4xl md:text-5xl font-bold leading-tight tracking-tight">
+          Get in Touch
+        </h1>
+        <p class="mt-8 text-lg md:text-xl text-slate-300 leading-relaxed">
+          We welcome inquiries from potential partners, investors, and collaborators.
+        </p>
+      </div>
     </div>
+    <div class="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-gold-600 via-gold-500 to-gold-600"></div>
   </section>
 
   <!-- Contact Section -->
-  <section class="py-20 bg-white">
+  <section class="py-24 bg-white">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid lg:grid-cols-2 gap-12">
+      <div class="grid lg:grid-cols-2 gap-16">
         <!-- Contact Info -->
         <div>
-          <h2 class="text-2xl font-bold text-slate-900 mb-8">Contact Information</h2>
-          <div class="bg-slate-50 rounded-xl p-8 border border-slate-200">
-            <div class="space-y-6">
-              <div>
-                <h3 class="text-lg font-semibold text-slate-900">Terrence (Terry) R. Manning</h3>
-                <p class="text-primary-700 font-medium">Executive Managing Member</p>
-                <p class="text-slate-600 mt-1">CapStone Sustainable Carbon Solutions</p>
-              </div>
+          <h2 class="text-sm font-semibold tracking-widest uppercase text-gold-700 mb-4">Direct Contact</h2>
+          <h3 class="text-2xl font-bold text-navy-900 mb-8">Executive Office</h3>
 
-              <div class="space-y-3">
-                <div class="flex items-center space-x-3">
-                  <svg class="w-5 h-5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                  </svg>
-                  <a href="mailto:terry@capstonescs.com" class="text-primary-700 hover:text-primary-800 transition-colors">
-                    terry@capstonescs.com
-                  </a>
+          <div class="bg-slate-50 border border-slate-200 shadow-lg">
+            <div class="border-t-4 border-gold-500"></div>
+            <div class="p-8">
+              <div class="space-y-6">
+                <div>
+                  <h4 class="text-lg font-bold text-navy-900">Terrence (Terry) R. Manning</h4>
+                  <p class="text-gold-700 font-medium text-sm uppercase tracking-wide">Executive Managing Member</p>
+                  <p class="text-slate-600 mt-1">CapStone Sustainable Carbon Solutions</p>
                 </div>
 
-                <div class="flex items-center space-x-3">
-                  <svg class="w-5 h-5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                  </svg>
-                  <span class="text-slate-600">Wyoming, USA</span>
+                <div class="w-12 h-px bg-gold-500"></div>
+
+                <div class="space-y-4">
+                  <div class="flex items-start space-x-4">
+                    <div class="w-10 h-10 bg-navy-900 flex items-center justify-center flex-shrink-0">
+                      <svg class="w-5 h-5 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <p class="text-xs text-slate-500 uppercase tracking-wide mb-1">Email</p>
+                      <a href="mailto:terry@capstonescs.com" class="text-navy-900 hover:text-gold-700 font-medium transition-colors">
+                        terry@capstonescs.com
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="flex items-start space-x-4">
+                    <div class="w-10 h-10 bg-navy-900 flex items-center justify-center flex-shrink-0">
+                      <svg class="w-5 h-5 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <p class="text-xs text-slate-500 uppercase tracking-wide mb-1">Location</p>
+                      <p class="text-navy-900 font-medium">Wyoming, USA</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -54,64 +75,67 @@ import Layout from '../layouts/Layout.astro';
 
         <!-- Contact Form -->
         <div>
-          <h2 class="text-2xl font-bold text-slate-900 mb-8">Send an Inquiry</h2>
+          <h2 class="text-sm font-semibold tracking-widest uppercase text-gold-700 mb-4">Inquiries</h2>
+          <h3 class="text-2xl font-bold text-navy-900 mb-8">Send a Message</h3>
+
           <form class="space-y-6" action="https://formspree.io/f/your-form-id" method="POST">
             <div>
-              <label for="name" class="block text-sm font-medium text-slate-700 mb-2">Name</label>
+              <label for="name" class="block text-sm font-medium text-slate-700 mb-2 uppercase tracking-wide">Name</label>
               <input
                 type="text"
                 id="name"
                 name="name"
                 required
-                class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-colors"
+                class="w-full px-4 py-3 border border-slate-300 focus:ring-2 focus:ring-gold-500 focus:border-gold-500 outline-none transition-colors bg-white"
                 placeholder="Your name"
               />
             </div>
 
             <div>
-              <label for="email" class="block text-sm font-medium text-slate-700 mb-2">Email</label>
+              <label for="email" class="block text-sm font-medium text-slate-700 mb-2 uppercase tracking-wide">Email</label>
               <input
                 type="email"
                 id="email"
                 name="email"
                 required
-                class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-colors"
+                class="w-full px-4 py-3 border border-slate-300 focus:ring-2 focus:ring-gold-500 focus:border-gold-500 outline-none transition-colors bg-white"
                 placeholder="your@email.com"
               />
             </div>
 
             <div>
-              <label for="organization" class="block text-sm font-medium text-slate-700 mb-2">Organization</label>
+              <label for="organization" class="block text-sm font-medium text-slate-700 mb-2 uppercase tracking-wide">Organization</label>
               <input
                 type="text"
                 id="organization"
                 name="organization"
-                class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-colors"
+                class="w-full px-4 py-3 border border-slate-300 focus:ring-2 focus:ring-gold-500 focus:border-gold-500 outline-none transition-colors bg-white"
                 placeholder="Your organization (optional)"
               />
             </div>
 
             <div>
-              <label for="message" class="block text-sm font-medium text-slate-700 mb-2">Message</label>
+              <label for="message" class="block text-sm font-medium text-slate-700 mb-2 uppercase tracking-wide">Message</label>
               <textarea
                 id="message"
                 name="message"
                 rows="5"
                 required
-                class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-colors resize-none"
+                class="w-full px-4 py-3 border border-slate-300 focus:ring-2 focus:ring-gold-500 focus:border-gold-500 outline-none transition-colors bg-white resize-none"
                 placeholder="How can we help you?"
               ></textarea>
             </div>
 
             <button
               type="submit"
-              class="w-full px-6 py-3 bg-primary-600 hover:bg-primary-700 text-white font-medium rounded-lg transition-colors"
+              class="w-full px-6 py-4 bg-navy-900 hover:bg-navy-800 text-gold-500 font-semibold tracking-wide uppercase text-sm transition-colors border border-navy-900 hover:border-gold-500"
             >
               Send Inquiry
             </button>
           </form>
-          <p class="mt-4 text-sm text-slate-500">
-            Note: Contact form requires configuration. Please email directly for immediate response.
+
+          <p class="mt-6 text-sm text-slate-500">
+            For immediate response, please contact us directly via email.
           </p>
         </div>
       </div>
