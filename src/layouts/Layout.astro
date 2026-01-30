@@ -91,6 +91,15 @@ const currentPath = Astro.url.pathname;
               Leadership
             </a>
             <a
+              href="/insights"
+              class:list={[
+                "px-4 py-2 text-sm font-medium tracking-wide uppercase transition-colors",
+                currentPath === "/insights" || currentPath.startsWith("/insights/") ? "text-gold-500" : "text-slate-300 hover:text-gold-500"
+              ]}
+            >
+              Insights
+            </a>
+            <a
               href="/contact"
               class:list={[
                 "px-4 py-2 text-sm font-medium tracking-wide uppercase transition-colors border border-gold-600 hover:bg-gold-600 hover:text-navy-950 ml-4",
@@ -142,6 +151,15 @@ const currentPath = Astro.url.pathname;
               Leadership
             </a>
             <a
+              href="/insights"
+              class:list={[
+                "px-4 py-2 text-sm font-medium tracking-wide uppercase",
+                currentPath === "/insights" || currentPath.startsWith("/insights/") ? "text-gold-500 bg-navy-900" : "text-slate-300 hover:text-gold-500"
+              ]}
+            >
+              Insights
+            </a>
+            <a
               href="/contact"
               class:list={[
                 "px-4 py-2 text-sm font-medium tracking-wide uppercase",
@@ -183,6 +201,7 @@ const currentPath = Astro.url.pathname;
               <a href="/about" class="block text-sm text-slate-400 hover:text-gold-500 transition-colors">About</a>
               <a href="/project" class="block text-sm text-slate-400 hover:text-gold-500 transition-colors">The Project</a>
               <a href="/team" class="block text-sm text-slate-400 hover:text-gold-500 transition-colors">Leadership</a>
+              <a href="/insights" class="block text-sm text-slate-400 hover:text-gold-500 transition-colors">Insights</a>
               <a href="/contact" class="block text-sm text-slate-400 hover:text-gold-500 transition-colors">Contact</a>
             </div>
           </div>

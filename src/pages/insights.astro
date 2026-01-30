@@ -1,0 +1,122 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+// Sample insights data - in a real implementation, this would come from a CMS or markdown files
+const insights = [
+  {
+    title: "Wyoming's Role in America's Energy Future",
+    excerpt: "Examining how Wyoming's regulatory framework and natural resources position the state as a leader in next-generation energy infrastructure.",
+    date: "2025-01-15",
+    slug: "wyoming-energy-future",
+    category: "Policy"
+  },
+  {
+    title: "Pre-FEED Development: The Foundation of Execution",
+    excerpt: "Understanding the critical importance of structured Pre-FEED work in de-risking large-scale industrial projects.",
+    date: "2025-01-10",
+    slug: "pre-feed-foundation",
+    category: "Technical"
+  },
+  {
+    title: "Carbon Management and Industrial Strategy",
+    excerpt: "How integrated carbon capture infrastructure transforms coal-to-products manufacturing into a sustainable industrial platform.",
+    date: "2025-01-05",
+    slug: "carbon-management-strategy",
+    category: "Industry"
+  }
+];
+---
+
+<Layout title="Insights & Publications" description="CapStone perspectives on energy development, industrial strategy, and project execution.">
+  <!-- Hero Section -->
+  <section class="relative bg-navy-950 text-white overflow-hidden">
+    <div class="absolute inset-0 opacity-5">
+      <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,%3Csvg width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"none\" fill-rule=\"evenodd\"%3E%3Cg fill=\"%23ffffff\" fill-opacity=\"1\"%3E%3Cpath d=\"M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+    </div>
+
+    <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
+      <div class="max-w-3xl">
+        <div class="w-20 h-1 bg-gold-500 mb-8"></div>
+        <h1 class="text-4xl md:text-5xl font-bold leading-tight tracking-tight">
+          Insights & <span class="text-gold-500">Publications</span>
+        </h1>
+        <p class="mt-8 text-lg md:text-xl text-slate-300 leading-relaxed">
+          Perspectives on energy development, industrial strategy, and project execution.
+        </p>
+      </div>
+    </div>
+    <div class="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-gold-600 via-gold-500 to-gold-600"></div>
+  </section>
+
+  <!-- Insights Grid -->
+  <section class="py-24 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {insights.map((insight) => (
+          <article class="bg-slate-50 border border-slate-200 shadow-lg hover:shadow-xl transition-shadow">
+            <div class="border-t-4 border-gold-500"></div>
+            <div class="p-8">
+              <div class="flex items-center justify-between mb-4">
+                <span class="text-xs font-semibold tracking-widest uppercase text-gold-700">{insight.category}</span>
+                <time class="text-xs text-slate-500" datetime={insight.date}>
+                  {new Date(insight.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
+                </time>
+              </div>
+
+              <h2 class="text-xl font-bold text-navy-900 mb-4 leading-tight">
+                {insight.title}
+              </h2>
+
+              <p class="text-slate-600 leading-relaxed mb-6">
+                {insight.excerpt}
+              </p>
+
+              <a
+                href={`/insights/${insight.slug}`}
+                class="inline-flex items-center text-sm font-semibold text-navy-900 hover:text-gold-700 transition-colors uppercase tracking-wide"
+              >
+                Read More
+                <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+              </a>
+            </div>
+          </article>
+        ))}
+      </div>
+
+      <!-- Coming Soon Message -->
+      <div class="mt-16 text-center">
+        <div class="w-16 h-1 bg-gold-500 mx-auto mb-6"></div>
+        <p class="text-slate-600 leading-relaxed max-w-2xl mx-auto">
+          Additional insights and publications will be added regularly. Subscribe to our updates to stay informed about new content.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter CTA -->
+  <section class="py-20 bg-slate-100">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-navy-950 text-white p-12 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+          <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,%3Csvg width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"none\" fill-rule=\"evenodd\"%3E%3Cg fill=\"%23ffffff\" fill-opacity=\"1\"%3E%3Cpath d=\"M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+        </div>
+
+        <div class="relative text-center">
+          <div class="w-16 h-1 bg-gold-500 mx-auto mb-6"></div>
+          <h2 class="text-2xl md:text-3xl font-bold mb-4">Stay Informed</h2>
+          <p class="text-slate-300 mb-8 max-w-2xl mx-auto">
+            Receive updates on new insights, industry developments, and CapStone project milestones.
+          </p>
+          <a
+            href="/contact"
+            class="inline-flex items-center px-10 py-4 bg-gold-600 hover:bg-gold-500 text-navy-950 font-semibold tracking-wide uppercase text-sm transition-colors"
+          >
+            Contact Us for Updates
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
