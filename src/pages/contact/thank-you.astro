@@ -1,0 +1,63 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Thank You" description="Thank you for contacting CapStone Sustainable Carbon Solutions.">
+  <!-- Hero Section -->
+  <section class="relative bg-navy-950 text-white">
+    <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
+      <div class="max-w-3xl mx-auto text-center">
+        <div class="w-20 h-1 bg-gold-500 mx-auto mb-8"></div>
+        <h1 class="text-4xl md:text-5xl font-bold leading-tight tracking-tight">
+          Thank You
+        </h1>
+      </div>
+    </div>
+    <div class="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-gold-600 via-gold-500 to-gold-600"></div>
+  </section>
+
+  <!-- Message Section -->
+  <section class="py-24 bg-white">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div class="bg-slate-50 border-t-4 border-gold-500 shadow-lg p-12">
+        <div class="w-16 h-16 bg-navy-900 rounded-full flex items-center justify-center mx-auto mb-6">
+          <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+          </svg>
+        </div>
+
+        <h2 class="text-2xl md:text-3xl font-bold text-navy-900 mb-6">
+          Your message has been received
+        </h2>
+
+        <p class="text-lg text-slate-600 leading-relaxed mb-8">
+          Thank you for contacting CapStone Sustainable Carbon Solutions. A member of our team will review your inquiry and respond promptly.
+        </p>
+
+        <div class="w-12 h-1 bg-gold-500 mx-auto my-8"></div>
+
+        <p class="text-slate-600 mb-8">
+          For immediate assistance, contact us directly at:<br>
+          <a href="mailto:terry@cscsconsulting.net" class="text-navy-900 hover:text-gold-700 font-semibold transition-colors">
+            terry@cscsconsulting.net
+          </a>
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4 justify-center mt-10">
+          <a
+            href="/"
+            class="inline-flex items-center px-8 py-3 bg-navy-900 hover:bg-navy-800 text-gold-500 font-semibold tracking-wide uppercase text-sm transition-colors border border-navy-900 hover:border-gold-500"
+          >
+            Return Home
+          </a>
+          <a
+            href="/project"
+            class="inline-flex items-center px-8 py-3 border border-gold-600 hover:bg-gold-600 hover:text-navy-950 text-gold-700 font-semibold tracking-wide uppercase text-sm transition-colors"
+          >
+            View The Project
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
