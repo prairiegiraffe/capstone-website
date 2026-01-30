@@ -64,6 +64,15 @@ const currentPath = Astro.url.pathname;
               Home
             </a>
             <a
+              href="/about"
+              class:list={[
+                "px-4 py-2 text-sm font-medium tracking-wide uppercase transition-colors",
+                currentPath === "/about" ? "text-gold-500" : "text-slate-300 hover:text-gold-500"
+              ]}
+            >
+              About
+            </a>
+            <a
               href="/project"
               class:list={[
                 "px-4 py-2 text-sm font-medium tracking-wide uppercase transition-colors",
@@ -104,6 +113,15 @@ const currentPath = Astro.url.pathname;
               ]}
             >
               Home
+            </a>
+            <a
+              href="/about"
+              class:list={[
+                "px-4 py-2 text-sm font-medium tracking-wide uppercase",
+                currentPath === "/about" ? "text-gold-500 bg-navy-900" : "text-slate-300 hover:text-gold-500"
+              ]}
+            >
+              About
             </a>
             <a
               href="/project"
@@ -162,6 +180,7 @@ const currentPath = Astro.url.pathname;
             <h4 class="text-gold-500 font-semibold text-sm tracking-widest uppercase mb-4">Navigation</h4>
             <div class="space-y-2">
               <a href="/" class="block text-sm text-slate-400 hover:text-gold-500 transition-colors">Home</a>
+              <a href="/about" class="block text-sm text-slate-400 hover:text-gold-500 transition-colors">About</a>
               <a href="/project" class="block text-sm text-slate-400 hover:text-gold-500 transition-colors">The Project</a>
               <a href="/team" class="block text-sm text-slate-400 hover:text-gold-500 transition-colors">Leadership</a>
               <a href="/contact" class="block text-sm text-slate-400 hover:text-gold-500 transition-colors">Contact</a>
