@@ -1,6 +1,16 @@
 ---
 import Layout from '../layouts/Layout.astro';
 
+// Featured insight
+const featuredInsight = {
+  title: "The Power of Coal Gasification: It Makes Sense and $$$",
+  excerpt: "A comprehensive examination of coal gasification technology, its economic impact, and strategic importance for American energy independence and manufacturing.",
+  date: "2025-01-20",
+  slug: "coal-gasification-power",
+  category: "Technical",
+  featured: true
+};
+
 // Sample insights data - in a real implementation, this would come from a CMS or markdown files
 const insights = [
   {
@@ -48,9 +58,90 @@ const insights = [
     <div class="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-gold-600 via-gold-500 to-gold-600"></div>
   </section>
 
-  <!-- Insights Grid -->
+  <!-- Featured Insight -->
+  <section class="py-16 bg-slate-100 border-b-4 border-gold-500">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="mb-6">
+        <span class="inline-block px-4 py-1 text-xs font-bold tracking-widest uppercase bg-gold-600 text-navy-950">Featured</span>
+      </div>
+
+      <article class="bg-white border-t-4 border-gold-500 shadow-2xl hover:shadow-3xl transition-shadow">
+        <div class="grid md:grid-cols-5 gap-8">
+          <div class="md:col-span-3 p-10">
+            <div class="flex items-center space-x-4 mb-6">
+              <span class="text-xs font-semibold tracking-widest uppercase text-gold-700">{featuredInsight.category}</span>
+              <span class="text-slate-400">•</span>
+              <time class="text-xs text-slate-500" datetime={featuredInsight.date}>
+                {new Date(featuredInsight.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
+              </time>
+            </div>
+
+            <h2 class="text-2xl md:text-3xl font-bold text-navy-900 mb-6 leading-tight">
+              {featuredInsight.title}
+            </h2>
+
+            <p class="text-lg text-slate-600 leading-relaxed mb-8">
+              {featuredInsight.excerpt}
+            </p>
+
+            <a
+              href={`/insights/${featuredInsight.slug}`}
+              class="inline-flex items-center px-8 py-4 bg-navy-900 hover:bg-navy-800 text-gold-500 font-semibold tracking-wide uppercase text-sm transition-colors border border-navy-900 hover:border-gold-500"
+            >
+              Read Full Article
+              <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+
+          <div class="md:col-span-2 bg-navy-950 p-10 flex items-center">
+            <div class="text-white">
+              <div class="w-16 h-1 bg-gold-500 mb-6"></div>
+              <h3 class="text-xl font-bold mb-4">Comprehensive Technical Guide</h3>
+              <p class="text-slate-300 leading-relaxed mb-6">
+                Answers to every technical, economic, and strategic question about coal gasification and blue ammonia production.
+              </p>
+              <ul class="space-y-2 text-sm text-slate-400">
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-gold-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  Technical & Process Details
+                </li>
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-gold-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  Economic & Workforce Impact
+                </li>
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-gold-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  Policy & Regulatory Framework
+                </li>
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-gold-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  Strategic Positioning
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Additional Insights Grid -->
   <section class="py-24 bg-white">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="mb-12">
+        <h2 class="text-2xl font-bold text-navy-900">Additional Insights</h2>
+      </div>
+
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {insights.map((insight) => (
           <article class="bg-slate-50 border border-slate-200 shadow-lg hover:shadow-xl transition-shadow">
